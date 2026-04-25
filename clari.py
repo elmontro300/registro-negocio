@@ -5,6 +5,14 @@ st.set_page_config(page_title="Mi registro de productos", page_icon="🛒")
 
 st.title("🛒 Registro de productos")
 
+st.markdown("""
+<style>
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+header {visibility: hidden;}
+</style>
+""", unsafe_allow_html=True)
+
 # Meoria temporal por el momento--------------------------------------------
 if "productos" not in st.session_state:
     st.session_state.productos = []
